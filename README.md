@@ -15,6 +15,9 @@ The scheme of the folders is the following:
     - Concentration 1
     - Concentration 2
     - Concentration 3
+  - Solvents
+    - Water
+    - Ethanol
 
 - QM simulations
   - Geometry Optimization
