@@ -1,0 +1,74 @@
+# This file was created Tue May  4 17:40:49 2021
+# Created by:
+#                     :-) GROMACS - gmx density, 2018.1 (-:
+# 
+# Executable:   /usr/bin/gmx
+# Data prefix:  /usr
+# Working dir:  /home/ubuntu/thesis/Rectangularbox/GFD3E/small_box_water/try1/analysis
+# Command line:
+#   gmx density -f GFD3E_maxclust.xtc -s GFD3E_maxclust.tpr -o /home/ubuntu/thesis/Rectangularbox/GFD3E/small_box_water/try1/analysis/graphs/density.xvg
+# gmx density is part of G R O M A C S:
+#
+# S  C  A  M  O  R  G
+#
+@    title "Partial density"
+@    xaxis  label "Coordinate (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Protein"
+    0.047887          165.651
+    0.143661          173.425
+    0.239435          154.238
+    0.335209          171.662
+    0.430983          149.263
+    0.526757          162.217
+    0.622531          147.644
+    0.718306          149.722
+     0.81408          155.183
+    0.909854          144.436
+     1.00563          157.368
+      1.1014          144.277
+     1.19718          165.152
+     1.29295          166.538
+     1.38872          182.406
+      1.4845          196.687
+     1.58027           208.37
+     1.67605          229.131
+     1.77182          218.395
+     1.86759          257.224
+     1.96337          254.149
+     2.05914           276.34
+     2.15492          295.951
+     2.25069          282.137
+     2.34646          304.081
+     2.44224          301.467
+     2.53801          313.319
+     2.63379          306.023
+     2.72956          298.527
+     2.82534          299.028
+     2.92111          283.843
+     3.01688          291.771
+     3.11266          276.639
+     3.20843          268.381
+     3.30421          251.702
+     3.39998          236.221
+     3.49575          234.538
+     3.59153          222.048
+      3.6873          212.631
+     3.78308          197.186
+     3.87885          191.893
+     3.97462          184.739
+      4.0704          183.569
+     4.16617          175.567
+     4.26195          171.351
+     4.35772          171.289
+     4.45349          170.207
+     4.54927          165.991
+     4.64504          168.433
+     4.74082          165.229
