@@ -1,0 +1,99 @@
+; MARTINI (martini22) Coarse Grained topology file for "GFD3E_martini_A"
+; Created by py version 2.4 
+; Using the following options:  -f /home/ubuntu/thesis/ini_files/GFD3E_try.pdb -name GFD3E_martini -o GFD3E_martini.top -x GFD3E_martini.pdb -ff martini22 -nt -ss EEEEEEEE
+; Sequence:
+; GFDFDFE
+; Secondary Structure:
+; EEEEEEE
+
+[ moleculetype ]
+; Name         Exclusions
+GFD3E_martini_A   1
+
+[ atoms ]
+    1   Nda     1   GLY    BB     1  0.0000 ; E
+    2   Nda     2   PHE    BB     2  0.0000 ; E
+    3   SC5     2   PHE   SC1     3  0.0000 ; E
+    4   SC5     2   PHE   SC2     4  0.0000 ; E
+    5   SC5     2   PHE   SC3     5  0.0000 ; E
+    6   Nda     3   ASP    BB     6  0.0000 ; E
+    7    Qa     3   ASP   SC1     7 -1.0000 ; E
+    8   Nda     4   PHE    BB     8  0.0000 ; E
+    9   SC5     4   PHE   SC1     9  0.0000 ; E
+   10   SC5     4   PHE   SC2    10  0.0000 ; E
+   11   SC5     4   PHE   SC3    11  0.0000 ; E
+   12   Nda     5   ASP    BB    12  0.0000 ; E
+   13    Qa     5   ASP   SC1    13 -1.0000 ; E
+   14   Nda     6   PHE    BB    14  0.0000 ; E
+   15   SC5     6   PHE   SC1    15  0.0000 ; E
+   16   SC5     6   PHE   SC2    16  0.0000 ; E
+   17   SC5     6   PHE   SC3    17  0.0000 ; E
+   18   Nda     7   GLU    BB    18  0.0000 ; E
+   19    Qa     7   GLU   SC1    19 -1.0000 ; E
+
+[ bonds ]
+; Backbone bonds
+    1     2      1   0.35000  1250 ; GLY(E)-PHE(E)
+    2     6      1   0.35000  1250 ; PHE(E)-ASP(E)
+    6     8      1   0.35000  1250 ; ASP(E)-PHE(E)
+    8    12      1   0.35000  1250 ; PHE(E)-ASP(E)
+   12    14      1   0.35000  1250 ; ASP(E)-PHE(E)
+   14    18      1   0.35000  1250 ; PHE(E)-GLU(E)
+; Sidechain bonds
+    2     3      1   0.31000  7500 ; PHE
+    6     7      1   0.32000  7500 ; ASP
+    8     9      1   0.31000  7500 ; PHE
+   12    13      1   0.32000  7500 ; ASP
+   14    15      1   0.31000  7500 ; PHE
+   18    19      1   0.40000  5000 ; GLU
+; Short elastic bonds for extended regions
+    1     6      1   0.64000  2500 ; GLY(1)-ASP(6) 1-3
+    2     8      1   0.64000  2500 ; PHE(2)-PHE(8) 2-4
+    6    12      1   0.64000  2500 ; ASP(6)-ASP(12) 2-4
+    8    14      1   0.64000  2500 ; PHE(8)-PHE(14) 2-4
+   12    18      1   0.64000  2500 ; ASP(12)-GLU(18) 2-4
+; Long elastic bonds for extended regions
+    1     8      1   0.97000  2500 ; GLY(1)-PHE(8) 1-4
+    2    12      1   0.97000  2500 ; PHE(2)-ASP(12) 1-4
+    6    14      1   0.97000  2500 ; ASP(6)-PHE(14) 1-4
+    8    18      1   0.97000  2500 ; PHE(8)-GLU(18) 1-4
+
+[ constraints ]
+    3     4      1   0.27000 ; PHE
+    3     5      1   0.27000 ; PHE
+    4     5      1   0.27000 ; PHE
+    9    10      1   0.27000 ; PHE
+    9    11      1   0.27000 ; PHE
+   10    11      1   0.27000 ; PHE
+   15    16      1   0.27000 ; PHE
+   15    17      1   0.27000 ; PHE
+   16    17      1   0.27000 ; PHE
+
+[ angles ]
+; Backbone angles
+    1     2     6      2    134    25 ; GLY(E)-PHE(E)-ASP(E)
+    2     6     8      2    134    25 ; PHE(E)-ASP(E)-PHE(E)
+    6     8    12      2    134    25 ; ASP(E)-PHE(E)-ASP(E)
+    8    12    14      2    134    25 ; PHE(E)-ASP(E)-PHE(E)
+   12    14    18      2    134    25 ; ASP(E)-PHE(E)-GLU(E)
+; Backbone-sidechain angles
+    1     2     3      2    100    25 ; GLY(E)-PHE(E) SBB
+    2     6     7      2    100    25 ; PHE(E)-ASP(E) SBB
+    6     8     9      2    100    25 ; ASP(E)-PHE(E) SBB
+    8    12    13      2    100    25 ; PHE(E)-ASP(E) SBB
+   12    14    15      2    100    25 ; ASP(E)-PHE(E) SBB
+   14    18    19      2    100    25 ; PHE(E)-GLU(E) SBB
+; Sidechain angles
+    2     3     4      2    150    50 ; PHE
+    2     3     5      2    150    50 ; PHE
+    8     9    10      2    150    50 ; PHE
+    8     9    11      2    150    50 ; PHE
+   14    15    16      2    150    50 ; PHE
+   14    15    17      2    150    50 ; PHE
+
+[ dihedrals ]
+; Backbone dihedrals
+; Sidechain improper dihedrals
+    2     4     5     3      2      0    50 ; PHE
+    8    10    11     9      2      0    50 ; PHE
+   14    16    17    15      2      0    50 ; PHE
