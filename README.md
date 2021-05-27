@@ -19,9 +19,9 @@ The scheme of the folders is the following:
 - QM simulations
   - Geometry Optimization
     - Multiwfn Files
-  - QM simulations (vacuum)
+  - QM simulations 1 (vacuum)
     - Multiwfn Files
-  - QM simulations (water)
+  - QM simulations 2 (water)
     - Multiwfn Files
-  - QM simulations (30% acetonitrile)
+  - QM simulations 3 (30% acetonitrile)
     - Multiwfn Files
