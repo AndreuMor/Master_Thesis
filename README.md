@@ -25,3 +25,6 @@ The scheme of the folders is the following:
     - Multiwfn Files
   - QM simulations 3 (30% acetonitrile)
     - Multiwfn Files
+
+#Notes
+ QM simulations: Input files for the simulations and geometry optimization is included in the output file. 
